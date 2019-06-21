@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>guzergahOlustur</class>
+ <widget class="QWidget" name="guzergahOlustur">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>596</width>
+    <height>427</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Güzergah Oluştur</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/icon/icon.ico</normaloff>:/icon/icon.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+ 	 background: #3498db;
+	border-radius: 18px;
+	font-family: Courier New;
+	color: #ffffff;
+	font-size: 16px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+    max-width:120px;
+	min-width:120px;
+	max-height:20px;	 
+	min-height:20px;	 
+}
+
+QPushButton:hover {
+	background: #3cb0fd;
+	text-decoration: none;
+}
+QLineEdit{
+	border: 2.5px double #55aaff;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+}
+QComboBox{
+	border: 2.5px double #55aaff;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+}
+QWidget{
+		font-family: Courier New;
+}</string>
+  </property>
+  <widget class="QPushButton" name="btnGeri">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>330</y>
+     <width>160</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>160</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>160</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Geri</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>501</width>
+     <height>42</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLineEdit" name="lnUrunKod">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="placeholderText">
+       <string>Ürün kodunu giriniz..</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnOlustur">
+      <property name="minimumSize">
+       <size>
+        <width>160</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>160</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Oluştur</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QTableWidget" name="tblListele">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>110</y>
+     <width>501</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <column>
+    <property name="text">
+     <string>Kod</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Ad</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>xKordinat</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>yKordinat</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
